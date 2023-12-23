@@ -1,0 +1,28 @@
+# Simultaneously Switching Noise (SSN) Report
+# Version: 1.0
+# Created on: Sat Oct 14 18:31:16 2023
+# Result Name: ssn_2
+# Project Name: new_soc_dlrc
+# Project Family: Artix-7
+# Part: xc7a100tcsg324
+# Temperature Grade: commercial
+# SSN Data Version: Production
+# Package Version: FINAL 2012-07-17
+# Package Pin Delay Version: VERS. 2.0 2012-07-17
+
+IO Bank,VCCO,Signal Name,Pin Number,IO Standard,Drive (mA),Slew Rate,OFFCHIP_TERM,Remaining Margin (%),Result, Notes
+15,3.3,eth_mdio_mdc_mdc,F16,LVCMOS33,12,SLOW,FP_VTT_50,90.8,PASS,
+15,3.3,eth_mdio_mdc_mdio_io,K13,LVCMOS33,12,SLOW,FP_VTT_50,72.1,PASS,
+15,3.3,eth_mii_rst_n,C16,LVCMOS33,12,SLOW,FP_VTT_50,91.6,PASS,
+15,3.3,eth_mii_tx_en,H15,LVCMOS33,12,SLOW,FP_VTT_50,91.5,PASS,
+15,3.3,eth_mii_txd[0],H14,LVCMOS33,12,SLOW,FP_VTT_50,88.7,PASS,
+15,3.3,eth_mii_txd[1],J14,LVCMOS33,12,SLOW,FP_VTT_50,79.5,PASS,
+15,3.3,eth_mii_txd[2],J13,LVCMOS33,12,SLOW,FP_VTT_50,76.1,PASS,
+15,3.3,eth_mii_txd[3],H17,LVCMOS33,12,SLOW,FP_VTT_50,79.0,PASS,
+16,3.3,usb_uart_txd,D10,LVCMOS33,12,SLOW,FP_VTT_50,99.1,PASS,
+
+
+# Reference Links
+# Safe to Ignore SSN Failure on MIG Designs - https://support.xilinx.com/s/article/36141
+# SSN Mitigation Strategy - http://www.xilinx.com/support/documentation/user_guides/ug471_7Series_SelectIO.pdf#search=%22Mitigate%22
+# Off-chip Terminations - http://www.xilinx.com/support/documentation/user_guides/ug471_7Series_SelectIO.pdf#search=%22terminated%22

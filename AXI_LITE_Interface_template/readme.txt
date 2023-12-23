@@ -1,0 +1,1 @@
+Both the interrupt and axi_lite files should be a component instantiated by the top file in this folder.
